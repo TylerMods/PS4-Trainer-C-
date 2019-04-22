@@ -1,0 +1,16 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+
+<Manifest version="1"> 
+  
+  <CheckInterval>30</CheckInterval>
+
+  <RemoteConfigUri>https://zihad.cf/TylerMods/PS4_Trainer/update.xml</RemoteConfigUri>
+
+  <SecurityToken>D68AF3A3-E737-4C34-B320-878B3649343D</SecurityToken>
+  
+  <BaseUri>http://zihad.cf/TylerMods/PS4_Trainer</BaseUri>
+
+  <Payload>PS4%20Trainer%20by%20TylerMods.zip</Payload>
+  
+</Manifest>
+then

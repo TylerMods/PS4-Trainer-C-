@@ -1,0 +1,1398 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{C01C70E2-4DC5-44A8-88BE-90940F907DC5}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <RootNamespace>PS4_Trainer_by_TylerMods</RootNamespace>
+    <AssemblyName>PS4 Trainer by TylerMods</AssemblyName>
+    <TargetFrameworkVersion>v4.6.1</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
+    <IsWebBootstrapper>false</IsWebBootstrapper>
+    <NuGetPackageImportStamp>
+    </NuGetPackageImportStamp>
+    <PublishUrl>publish\</PublishUrl>
+    <Install>true</Install>
+    <InstallFrom>Disk</InstallFrom>
+    <UpdateEnabled>false</UpdateEnabled>
+    <UpdateMode>Foreground</UpdateMode>
+    <UpdateInterval>7</UpdateInterval>
+    <UpdateIntervalUnits>Days</UpdateIntervalUnits>
+    <UpdatePeriodically>false</UpdatePeriodically>
+    <UpdateRequired>false</UpdateRequired>
+    <MapFileExtensions>true</MapFileExtensions>
+    <ApplicationRevision>0</ApplicationRevision>
+    <ApplicationVersion>1.0.4.%2a</ApplicationVersion>
+    <UseApplicationTrust>false</UseApplicationTrust>
+    <BootstrapperEnabled>true</BootstrapperEnabled>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup>
+    <ApplicationIcon>trainerlogomk2_c_CLE_icon.ico</ApplicationIcon>
+  </PropertyGroup>
+  <PropertyGroup>
+    <StartupObject />
+  </PropertyGroup>
+  <PropertyGroup>
+    <ApplicationManifest>app.manifest</ApplicationManifest>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="Bunifu_UI_v1.5.3">
+      <HintPath>D:\Tyler\Documents\Bunifu_UI_v1.5.3.dll</HintPath>
+    </Reference>
+    <Reference Include="MetroFramework, Version=1.4.0.0, Culture=neutral, PublicKeyToken=5f91a84759bf584a, processorArchitecture=MSIL">
+      <HintPath>..\packages\MetroModernUI.1.4.0.0\lib\net\MetroFramework.dll</HintPath>
+    </Reference>
+    <Reference Include="MetroFramework.Design, Version=1.4.0.0, Culture=neutral, PublicKeyToken=5f91a84759bf584a, processorArchitecture=MSIL">
+      <HintPath>..\packages\MetroModernUI.1.4.0.0\lib\net\MetroFramework.Design.dll</HintPath>
+    </Reference>
+    <Reference Include="MetroFramework.Fonts, Version=1.4.0.0, Culture=neutral, PublicKeyToken=5f91a84759bf584a, processorArchitecture=MSIL">
+      <HintPath>..\packages\MetroModernUI.1.4.0.0\lib\net\MetroFramework.Fonts.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.VisualBasic" />
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Management" />
+    <Reference Include="System.Web.Extensions" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Net.Http" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+    <Reference Include="theme">
+      <HintPath>..\..\Resident Evil 5 Mod Tool by TylerMods\Resident Evil 5 Mod Tool by TylerMods\bin\Debug\theme.dll</HintPath>
+    </Reference>
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="DB\PS4Consoles.cs" />
+    <Compile Include="EverythingAlright.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="EverythingAlright.Designer.cs">
+      <DependentUpon>EverythingAlright.cs</DependentUpon>
+    </Compile>
+    <Compile Include="DB\Favorites.cs" />
+    <Compile Include="Game Trainers\ACDD.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Game Trainers\ACDD.Designer.cs">
+      <DependentUpon>ACDD.cs</DependentUpon>
+    </Compile>
+    <Compile Include="API\Calling.cs" />
+    <Compile Include="Changelog.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Changelog.Designer.cs">
+      <DependentUpon>Changelog.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Game Trainers\7Days.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Game Trainers\7Days.Designer.cs">
+      <DependentUpon>7Days.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Game Trainers\ACOrigins.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Game Trainers\ACOrigins.Designer.cs">
+      <DependentUpon>ACOrigins.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Game Trainers\ACS.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Game Trainers\ACS.Designer.cs">
+      <DependentUpon>ACS.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Game Trainers\ACU.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Game Trainers\ACU.Designer.cs">
+      <DependentUpon>ACU.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Game Trainers\AlienIsolation.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Game Trainers\AlienIsolation.Designer.cs">
+      <DependentUpon>AlienIsolation.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Game Trainers\AOM.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Game Trainers\AOM.Designer.cs">
+      <DependentUpon>AOM.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Game Trainers\AS2.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Game Trainers\AS2.Designer.cs">
+      <DependentUpon>AS2.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Game Trainers\bbgoty.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Game Trainers\bbgoty.Designer.cs">
+      <DependentUpon>bbgoty.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Game Trainers\BF1.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Game Trainers\BF1.Designer.cs">
+      <DependentUpon>BF1.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Game Trainers\BF4.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Game Trainers\BF4.Designer.cs">
+      <DependentUpon>BF4.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Game Trainers\BFH.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Game Trainers\BFH.Designer.cs">
+      <DependentUpon>BFH.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Game Trainers\BMAN.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Game Trainers\BMAN.Designer.cs">
+      <DependentUpon>BMAN.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Game Trainers\BS1.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Game Trainers\BS1.Designer.cs">
+      <DependentUpon>BS1.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Game Trainers\BS2.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Game Trainers\BS2.Designer.cs">
+      <DependentUpon>BS2.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Game Trainers\BSI.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Game Trainers\BSI.Designer.cs">
+      <DependentUpon>BSI.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Game Trainers\BTHC.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Game Trainers\BTHC.Designer.cs">
+      <DependentUpon>BTHC.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Game Trainers\BTPS.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Game Trainers\BTPS.Designer.cs">
+      <DependentUpon>BTPS.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Game Trainers\CrashBandicoot.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Game Trainers\CrashBandicoot.Designer.cs">
+      <DependentUpon>CrashBandicoot.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Game Trainers\D2.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Game Trainers\D2.Designer.cs">
+      <DependentUpon>D2.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Game Trainers\DAX3.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Game Trainers\DAX3.Designer.cs">
+      <DependentUpon>DAX3.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Game Trainers\DBZF.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Game Trainers\DBZF.Designer.cs">
+      <DependentUpon>DBZF.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Game Trainers\DDOO.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Game Trainers\DDOO.Designer.cs">
+      <DependentUpon>DDOO.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Game Trainers\DeadNation.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Game Trainers\DeadNation.Designer.cs">
+      <DependentUpon>DeadNation.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Game Trainers\DeadRising4.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Game Trainers\DeadRising4.Designer.cs">
+      <DependentUpon>DeadRising4.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Game Trainers\DEMD.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Game Trainers\DEMD.Designer.cs">
+      <DependentUpon>DEMD.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Game Trainers\Diablo3.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Game Trainers\Diablo3.Designer.cs">
+      <DependentUpon>Diablo3.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Game Trainers\Dishonored2.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Game Trainers\Dishonored2.Designer.cs">
+      <DependentUpon>Dishonored2.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Game Trainers\DMC3.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Game Trainers\DMC3.Designer.cs">
+      <DependentUpon>DMC3.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Game Trainers\DMC4.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Game Trainers\DMC4.Designer.cs">
+      <DependentUpon>DMC4.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Game Trainers\DOOM.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Game Trainers\DOOM.Designer.cs">
+      <DependentUpon>DOOM.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Game Trainers\DragonBallZXenoverse2.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Game Trainers\DragonBallZXenoverse2.Designer.cs">
+      <DependentUpon>DragonBallZXenoverse2.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Game Trainers\DragonQH2.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Game Trainers\DragonQH2.Designer.cs">
+      <DependentUpon>DragonQH2.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Game Trainers\DS3FFE.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Game Trainers\DS3FFE.Designer.cs">
+      <DependentUpon>DS3FFE.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Game Trainers\DSCS.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Game Trainers\DSCS.Designer.cs">
+      <DependentUpon>DSCS.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Game Trainers\DWE.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Game Trainers\DWE.Designer.cs">
+      <DependentUpon>DWE.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Game Trainers\DyingLightEE.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Game Trainers\DyingLightEE.Designer.cs">
+      <DependentUpon>DyingLightEE.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Game Trainers\Extinction.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Game Trainers\Extinction.Designer.cs">
+      <DependentUpon>Extinction.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Game Trainers\Fallout4.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Game Trainers\Fallout4.Designer.cs">
+      <DependentUpon>Fallout4.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Game Trainers\FarCry5.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Game Trainers\FarCry5.Designer.cs">
+      <DependentUpon>FarCry5.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Game Trainers\FC4.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Game Trainers\FC4.Designer.cs">
+      <DependentUpon>FC4.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Game Trainers\FCP.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Game Trainers\FCP.Designer.cs">
+      <DependentUpon>FCP.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Game Trainers\FFXV.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Game Trainers\FFXV.Designer.cs">
+      <DependentUpon>FFXV.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Game Trainers\FIFA18.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Game Trainers\FIFA18.Designer.cs">
+      <DependentUpon>FIFA18.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Game Trainers\Ghostbusters.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Game Trainers\Ghostbusters.Designer.cs">
+      <DependentUpon>Ghostbusters.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Game Trainers\GodofWar4.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Game Trainers\GodofWar4.Designer.cs">
+      <DependentUpon>GodofWar4.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Game Trainers\GOW3.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Game Trainers\GOW3.Designer.cs">
+      <DependentUpon>GOW3.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Game Trainers\GravityRush.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Game Trainers\GravityRush.Designer.cs">
+      <DependentUpon>GravityRush.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Game Trainers\GRW.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Game Trainers\GRW.Designer.cs">
+      <DependentUpon>GRW.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Game Trainers\HitmanGOTY.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Game Trainers\HitmanGOTY.Designer.cs">
+      <DependentUpon>HitmanGOTY.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Game Trainers\HokutoGaGotoku.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Game Trainers\HokutoGaGotoku.Designer.cs">
+      <DependentUpon>HokutoGaGotoku.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Game Trainers\HR.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Game Trainers\HR.Designer.cs">
+      <DependentUpon>HR.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Game Trainers\HZDCE.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Game Trainers\HZDCE.Designer.cs">
+      <DependentUpon>HZDCE.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Game Trainers\InfamousFirstLight.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Game Trainers\InfamousFirstLight.Designer.cs">
+      <DependentUpon>InfamousFirstLight.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Game Trainers\InfamousSecondSon.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Game Trainers\InfamousSecondSon.Designer.cs">
+      <DependentUpon>InfamousSecondSon.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Game Trainers\Injustice2.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Game Trainers\Injustice2.Designer.cs">
+      <DependentUpon>Injustice2.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Game Trainers\JustCause3.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Game Trainers\JustCause3.Designer.cs">
+      <DependentUpon>JustCause3.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Game Trainers\KH1.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Game Trainers\KH1.Designer.cs">
+      <DependentUpon>KH1.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Game Trainers\KillzoneSF.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Game Trainers\KillzoneSF.Designer.cs">
+      <DependentUpon>KillzoneSF.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Game Trainers\LEGOHOBBIT.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Game Trainers\LEGOHOBBIT.Designer.cs">
+      <DependentUpon>LEGOHOBBIT.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Game Trainers\LOTF.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Game Trainers\LOTF.Designer.cs">
+      <DependentUpon>LOTF.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Game Trainers\MadMax.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Game Trainers\MadMax.Designer.cs">
+      <DependentUpon>MadMax.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Game Trainers\Mafia3.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Game Trainers\Mafia3.Designer.cs">
+      <DependentUpon>Mafia3.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Game Trainers\MEA.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Game Trainers\MEA.Designer.cs">
+      <DependentUpon>MEA.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Game Trainers\MESW.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Game Trainers\MESW.Designer.cs">
+      <DependentUpon>MESW.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Game Trainers\MHW.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Game Trainers\MHW.Designer.cs">
+      <DependentUpon>MHW.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Game Trainers\Minecraft.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Game Trainers\Minecraft.Designer.cs">
+      <DependentUpon>Minecraft.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Game Trainers\MKX.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Game Trainers\MKX.Designer.cs">
+      <DependentUpon>MKX.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Game Trainers\MKXL.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Game Trainers\MKXL.Designer.cs">
+      <DependentUpon>MKXL.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Game Trainers\MR.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Game Trainers\MR.Designer.cs">
+      <DependentUpon>MR.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Game Trainers\NA.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Game Trainers\NA.Designer.cs">
+      <DependentUpon>NA.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Game Trainers\NBA2K18.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Game Trainers\NBA2K18.Designer.cs">
+      <DependentUpon>NBA2K18.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Game Trainers\NBAL18.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Game Trainers\NBAL18.Designer.cs">
+      <DependentUpon>NBAL18.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Game Trainers\NFSPayback.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Game Trainers\NFSPayback.Designer.cs">
+      <DependentUpon>NFSPayback.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Game Trainers\Nioh.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Game Trainers\Nioh.Designer.cs">
+      <DependentUpon>Nioh.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Game Trainers\Outlast2.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Game Trainers\Outlast2.Designer.cs">
+      <DependentUpon>Outlast2.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Game Trainers\Persona5.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Game Trainers\Persona5.Designer.cs">
+      <DependentUpon>Persona5.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Game Trainers\PES18.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Game Trainers\PES18.Designer.cs">
+      <DependentUpon>PES18.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Game Trainers\Prey.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Game Trainers\Prey.Designer.cs">
+      <DependentUpon>Prey.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Game Trainers\R6S.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Game Trainers\R6S.Designer.cs">
+      <DependentUpon>R6S.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Game Trainers\RAC.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Game Trainers\RAC.Designer.cs">
+      <DependentUpon>RAC.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Game Trainers\RE0.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Game Trainers\RE0.Designer.cs">
+      <DependentUpon>RE0.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Game Trainers\RE1.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Game Trainers\RE1.Designer.cs">
+      <DependentUpon>RE1.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Game Trainers\re5.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Game Trainers\re5.Designer.cs">
+      <DependentUpon>re5.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Game Trainers\RE6.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Game Trainers\RE6.Designer.cs">
+      <DependentUpon>RE6.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Game Trainers\RE7.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Game Trainers\RE7.Designer.cs">
+      <DependentUpon>RE7.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Game Trainers\RER1.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Game Trainers\RER1.Designer.cs">
+      <DependentUpon>RER1.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Game Trainers\RER2.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Game Trainers\RER2.Designer.cs">
+      <DependentUpon>RER2.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Game Trainers\Resogun.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Game Trainers\Resogun.Designer.cs">
+      <DependentUpon>Resogun.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Game Trainers\ROTR20Year.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Game Trainers\ROTR20Year.Designer.cs">
+      <DependentUpon>ROTR20Year.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Game Trainers\SE4.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Game Trainers\SE4.Designer.cs">
+      <DependentUpon>SE4.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Game Trainers\Skyrim.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Game Trainers\Skyrim.Designer.cs">
+      <DependentUpon>Skyrim.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Game Trainers\SleepingDogs.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Game Trainers\SleepingDogs.Designer.cs">
+      <DependentUpon>SleepingDogs.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Game Trainers\SOIF.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Game Trainers\SOIF.Designer.cs">
+      <DependentUpon>SOIF.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Game Trainers\SonicMania.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Game Trainers\SonicMania.Designer.cs">
+      <DependentUpon>SonicMania.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Game Trainers\SOTC.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Game Trainers\SOTC.Designer.cs">
+      <DependentUpon>SOTC.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Game Trainers\SWB.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Game Trainers\SWB.Designer.cs">
+      <DependentUpon>SWB.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Game Trainers\TD.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Game Trainers\TD.Designer.cs">
+      <DependentUpon>TD.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Game Trainers\Technomancer.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Game Trainers\Technomancer.Designer.cs">
+      <DependentUpon>Technomancer.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Game Trainers\Tekken7.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Game Trainers\Tekken7.Designer.cs">
+      <DependentUpon>Tekken7.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Game Trainers\TEW1.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Game Trainers\TEW1.Designer.cs">
+      <DependentUpon>TEW1.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Game Trainers\TEW2.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Game Trainers\TEW2.Designer.cs">
+      <DependentUpon>TEW2.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Game Trainers\TF.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Game Trainers\TF.Designer.cs">
+      <DependentUpon>TF.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Game Trainers\TF2.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Game Trainers\TF2.Designer.cs">
+      <DependentUpon>TF2.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Game Trainers\Thief.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Game Trainers\Thief.Designer.cs">
+      <DependentUpon>Thief.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Game Trainers\TO1886.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Game Trainers\TO1886.Designer.cs">
+      <DependentUpon>TO1886.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Game Trainers\TombRaider.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Game Trainers\TombRaider.Designer.cs">
+      <DependentUpon>TombRaider.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Game Trainers\TQ.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Game Trainers\TQ.Designer.cs">
+      <DependentUpon>TQ.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Game Trainers\UFC3.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Game Trainers\UFC3.Designer.cs">
+      <DependentUpon>UFC3.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Game Trainers\Uncharted1.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Game Trainers\Uncharted1.Designer.cs">
+      <DependentUpon>Uncharted1.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Game Trainers\Uncharted2.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Game Trainers\Uncharted2.Designer.cs">
+      <DependentUpon>Uncharted2.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Game Trainers\Uncharted3.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Game Trainers\Uncharted3.Designer.cs">
+      <DependentUpon>Uncharted3.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Game Trainers\Uncharted4.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Game Trainers\Uncharted4.Designer.cs">
+      <DependentUpon>Uncharted4.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Game Trainers\UnchartedLL.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Game Trainers\UnchartedLL.Designer.cs">
+      <DependentUpon>UnchartedLL.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Game Trainers\WatchDogs1.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Game Trainers\WatchDogs1.Designer.cs">
+      <DependentUpon>WatchDogs1.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Game Trainers\WatchDogs2.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Game Trainers\WatchDogs2.Designer.cs">
+      <DependentUpon>WatchDogs2.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Game Trainers\Witcher3.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Game Trainers\Witcher3.Designer.cs">
+      <DependentUpon>Witcher3.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Game Trainers\WitchHundredKnights.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Game Trainers\WitchHundredKnights.Designer.cs">
+      <DependentUpon>WitchHundredKnights.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Game Trainers\WTNC.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Game Trainers\WTNC.Designer.cs">
+      <DependentUpon>WTNC.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Game Trainers\WTNO.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Game Trainers\WTNO.Designer.cs">
+      <DependentUpon>WTNO.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Game Trainers\WTOB.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Game Trainers\WTOB.Designer.cs">
+      <DependentUpon>WTOB.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Game Trainers\WWE18.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Game Trainers\WWE18.Designer.cs">
+      <DependentUpon>WWE18.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Game Trainers\Yakuza6.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Game Trainers\Yakuza6.Designer.cs">
+      <DependentUpon>Yakuza6.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Game Trainers\YakuzaKiwami.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Game Trainers\YakuzaKiwami.Designer.cs">
+      <DependentUpon>YakuzaKiwami.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Game Trainers\YakuzaZero.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Game Trainers\YakuzaZero.Designer.cs">
+      <DependentUpon>YakuzaZero.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Home.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Home.Designer.cs">
+      <DependentUpon>Home.cs</DependentUpon>
+    </Compile>
+    <Compile Include="IPSelect.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="IPSelect.Designer.cs">
+      <DependentUpon>IPSelect.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Launching.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Launching.Designer.cs">
+      <DependentUpon>Launching.cs</DependentUpon>
+    </Compile>
+    <Compile Include="main.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="main.Designer.cs">
+      <DependentUpon>main.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Game Trainers\MGSV.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Game Trainers\MGSV.Designer.cs">
+      <DependentUpon>MGSV.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Game Trainers\NBA2K17.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Game Trainers\NBA2K17.Designer.cs">
+      <DependentUpon>NBA2K17.cs</DependentUpon>
+    </Compile>
+    <Compile Include="API\Process.cs" />
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="API\PS4RPC.cs" />
+    <Compile Include="Game Trainers\re4.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Game Trainers\re4.Designer.cs">
+      <DependentUpon>re4.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Game Trainers\TheLastofUs.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Game Trainers\TheLastofUs.Designer.cs">
+      <DependentUpon>TheLastofUs.cs</DependentUpon>
+    </Compile>
+    <Compile Include="API\Util.cs" />
+    <Compile Include="DB\RegistryData.cs" />
+    <Compile Include="Update.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Update.Designer.cs">
+      <DependentUpon>Update.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Updater.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Updater.Designer.cs">
+      <DependentUpon>Updater.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UpdateSuccess.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="UpdateSuccess.Designer.cs">
+      <DependentUpon>UpdateSuccess.cs</DependentUpon>
+    </Compile>
+    <EmbeddedResource Include="EverythingAlright.resx">
+      <DependentUpon>EverythingAlright.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Game Trainers\ACDD.resx">
+      <DependentUpon>ACDD.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Changelog.resx">
+      <DependentUpon>Changelog.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Game Trainers\7Days.resx">
+      <DependentUpon>7Days.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Game Trainers\ACOrigins.resx">
+      <DependentUpon>ACOrigins.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Game Trainers\ACS.resx">
+      <DependentUpon>ACS.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Game Trainers\ACU.resx">
+      <DependentUpon>ACU.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Game Trainers\AlienIsolation.resx">
+      <DependentUpon>AlienIsolation.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Game Trainers\AOM.resx">
+      <DependentUpon>AOM.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Game Trainers\AS2.resx">
+      <DependentUpon>AS2.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Game Trainers\bbgoty.resx">
+      <DependentUpon>bbgoty.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Game Trainers\BF1.resx">
+      <DependentUpon>BF1.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Game Trainers\BF4.resx">
+      <DependentUpon>BF4.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Game Trainers\BFH.resx">
+      <DependentUpon>BFH.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Game Trainers\BMAN.resx">
+      <DependentUpon>BMAN.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Game Trainers\BS1.resx">
+      <DependentUpon>BS1.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Game Trainers\BS2.resx">
+      <DependentUpon>BS2.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Game Trainers\BSI.resx">
+      <DependentUpon>BSI.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Game Trainers\BTHC.resx">
+      <DependentUpon>BTHC.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Game Trainers\BTPS.resx">
+      <DependentUpon>BTPS.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Game Trainers\CrashBandicoot.resx">
+      <DependentUpon>CrashBandicoot.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Game Trainers\D2.resx">
+      <DependentUpon>D2.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Game Trainers\DAX3.resx">
+      <DependentUpon>DAX3.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Game Trainers\DBZF.resx">
+      <DependentUpon>DBZF.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Game Trainers\DDOO.resx">
+      <DependentUpon>DDOO.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Game Trainers\DeadNation.resx">
+      <DependentUpon>DeadNation.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Game Trainers\DeadRising4.resx">
+      <DependentUpon>DeadRising4.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Game Trainers\DEMD.resx">
+      <DependentUpon>DEMD.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Game Trainers\Diablo3.resx">
+      <DependentUpon>Diablo3.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Game Trainers\Dishonored2.resx">
+      <DependentUpon>Dishonored2.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Game Trainers\DMC3.resx">
+      <DependentUpon>DMC3.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Game Trainers\DMC4.resx">
+      <DependentUpon>DMC4.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Game Trainers\DOOM.resx">
+      <DependentUpon>DOOM.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Game Trainers\DragonBallZXenoverse2.resx">
+      <DependentUpon>DragonBallZXenoverse2.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Game Trainers\DragonQH2.resx">
+      <DependentUpon>DragonQH2.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Game Trainers\DS3FFE.resx">
+      <DependentUpon>DS3FFE.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Game Trainers\DSCS.resx">
+      <DependentUpon>DSCS.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Game Trainers\DWE.resx">
+      <DependentUpon>DWE.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Game Trainers\DyingLightEE.resx">
+      <DependentUpon>DyingLightEE.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Game Trainers\Extinction.resx">
+      <DependentUpon>Extinction.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Game Trainers\Fallout4.resx">
+      <DependentUpon>Fallout4.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Game Trainers\FarCry5.resx">
+      <DependentUpon>FarCry5.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Game Trainers\FC4.resx">
+      <DependentUpon>FC4.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Game Trainers\FCP.resx">
+      <DependentUpon>FCP.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Game Trainers\FFXV.resx">
+      <DependentUpon>FFXV.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Game Trainers\FIFA18.resx">
+      <DependentUpon>FIFA18.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Game Trainers\Ghostbusters.resx">
+      <DependentUpon>Ghostbusters.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Game Trainers\GodofWar4.resx">
+      <DependentUpon>GodofWar4.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Game Trainers\GOW3.resx">
+      <DependentUpon>GOW3.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Game Trainers\GravityRush.resx">
+      <DependentUpon>GravityRush.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Game Trainers\GRW.resx">
+      <DependentUpon>GRW.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Game Trainers\HitmanGOTY.resx">
+      <DependentUpon>HitmanGOTY.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Game Trainers\HokutoGaGotoku.resx">
+      <DependentUpon>HokutoGaGotoku.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Game Trainers\HR.resx">
+      <DependentUpon>HR.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Game Trainers\HZDCE.resx">
+      <DependentUpon>HZDCE.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Game Trainers\InfamousFirstLight.resx">
+      <DependentUpon>InfamousFirstLight.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Game Trainers\InfamousSecondSon.resx">
+      <DependentUpon>InfamousSecondSon.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Game Trainers\Injustice2.resx">
+      <DependentUpon>Injustice2.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Game Trainers\JustCause3.resx">
+      <DependentUpon>JustCause3.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Game Trainers\KH1.resx">
+      <DependentUpon>KH1.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Game Trainers\KillzoneSF.resx">
+      <DependentUpon>KillzoneSF.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Game Trainers\LEGOHOBBIT.resx">
+      <DependentUpon>LEGOHOBBIT.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Game Trainers\LOTF.resx">
+      <DependentUpon>LOTF.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Game Trainers\MadMax.resx">
+      <DependentUpon>MadMax.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Game Trainers\Mafia3.resx">
+      <DependentUpon>Mafia3.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Game Trainers\MEA.resx">
+      <DependentUpon>MEA.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Game Trainers\MESW.resx">
+      <DependentUpon>MESW.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Game Trainers\MHW.resx">
+      <DependentUpon>MHW.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Game Trainers\Minecraft.resx">
+      <DependentUpon>Minecraft.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Game Trainers\MKX.resx">
+      <DependentUpon>MKX.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Game Trainers\MKXL.resx">
+      <DependentUpon>MKXL.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Game Trainers\MR.resx">
+      <DependentUpon>MR.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Game Trainers\NA.resx">
+      <DependentUpon>NA.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Game Trainers\NBA2K18.resx">
+      <DependentUpon>NBA2K18.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Game Trainers\NBAL18.resx">
+      <DependentUpon>NBAL18.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Game Trainers\NFSPayback.resx">
+      <DependentUpon>NFSPayback.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Game Trainers\Nioh.resx">
+      <DependentUpon>Nioh.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Game Trainers\Outlast2.resx">
+      <DependentUpon>Outlast2.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Game Trainers\Persona5.resx">
+      <DependentUpon>Persona5.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Game Trainers\PES18.resx">
+      <DependentUpon>PES18.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Game Trainers\Prey.resx">
+      <DependentUpon>Prey.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Game Trainers\R6S.resx">
+      <DependentUpon>R6S.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Game Trainers\RAC.resx">
+      <DependentUpon>RAC.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Game Trainers\RE0.resx">
+      <DependentUpon>RE0.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Game Trainers\RE1.resx">
+      <DependentUpon>RE1.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Game Trainers\re5.resx">
+      <DependentUpon>re5.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Game Trainers\RE6.resx">
+      <DependentUpon>RE6.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Game Trainers\RE7.resx">
+      <DependentUpon>RE7.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Game Trainers\RER1.resx">
+      <DependentUpon>RER1.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Game Trainers\RER2.resx">
+      <DependentUpon>RER2.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Game Trainers\Resogun.resx">
+      <DependentUpon>Resogun.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Game Trainers\ROTR20Year.resx">
+      <DependentUpon>ROTR20Year.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Game Trainers\SE4.resx">
+      <DependentUpon>SE4.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Game Trainers\Skyrim.resx">
+      <DependentUpon>Skyrim.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Game Trainers\SleepingDogs.resx">
+      <DependentUpon>SleepingDogs.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Game Trainers\SOIF.resx">
+      <DependentUpon>SOIF.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Game Trainers\SonicMania.resx">
+      <DependentUpon>SonicMania.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Game Trainers\SOTC.resx">
+      <DependentUpon>SOTC.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Game Trainers\SWB.resx">
+      <DependentUpon>SWB.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Game Trainers\TD.resx">
+      <DependentUpon>TD.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Game Trainers\Technomancer.resx">
+      <DependentUpon>Technomancer.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Game Trainers\Tekken7.resx">
+      <DependentUpon>Tekken7.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Game Trainers\TEW1.resx">
+      <DependentUpon>TEW1.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Game Trainers\TEW2.resx">
+      <DependentUpon>TEW2.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Game Trainers\TF.resx">
+      <DependentUpon>TF.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Game Trainers\TF2.resx">
+      <DependentUpon>TF2.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Game Trainers\Thief.resx">
+      <DependentUpon>Thief.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Game Trainers\TO1886.resx">
+      <DependentUpon>TO1886.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Game Trainers\TombRaider.resx">
+      <DependentUpon>TombRaider.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Game Trainers\TQ.resx">
+      <DependentUpon>TQ.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Game Trainers\UFC3.resx">
+      <DependentUpon>UFC3.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Game Trainers\Uncharted1.resx">
+      <DependentUpon>Uncharted1.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Game Trainers\Uncharted2.resx">
+      <DependentUpon>Uncharted2.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Game Trainers\Uncharted3.resx">
+      <DependentUpon>Uncharted3.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Game Trainers\Uncharted4.resx">
+      <DependentUpon>Uncharted4.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Game Trainers\UnchartedLL.resx">
+      <DependentUpon>UnchartedLL.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Game Trainers\WatchDogs1.resx">
+      <DependentUpon>WatchDogs1.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Game Trainers\WatchDogs2.resx">
+      <DependentUpon>WatchDogs2.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Game Trainers\Witcher3.resx">
+      <DependentUpon>Witcher3.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Game Trainers\WitchHundredKnights.resx">
+      <DependentUpon>WitchHundredKnights.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Game Trainers\WTNC.resx">
+      <DependentUpon>WTNC.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Game Trainers\WTNO.resx">
+      <DependentUpon>WTNO.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Game Trainers\WTOB.resx">
+      <DependentUpon>WTOB.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Game Trainers\WWE18.resx">
+      <DependentUpon>WWE18.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Game Trainers\Yakuza6.resx">
+      <DependentUpon>Yakuza6.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Game Trainers\YakuzaKiwami.resx">
+      <DependentUpon>YakuzaKiwami.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Game Trainers\YakuzaZero.resx">
+      <DependentUpon>YakuzaZero.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Home.resx">
+      <DependentUpon>Home.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="IPSelect.resx">
+      <DependentUpon>IPSelect.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Launching.resx">
+      <DependentUpon>Launching.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="main.resx">
+      <DependentUpon>main.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Game Trainers\MGSV.resx">
+      <DependentUpon>MGSV.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Game Trainers\NBA2K17.resx">
+      <DependentUpon>NBA2K17.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Resources.resx</DependentUpon>
+      <DesignTime>True</DesignTime>
+    </Compile>
+    <EmbeddedResource Include="Game Trainers\re4.resx">
+      <DependentUpon>re4.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Game Trainers\TheLastofUs.resx">
+      <DependentUpon>TheLastofUs.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Update.resx">
+      <DependentUpon>Update.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Updater.resx">
+      <DependentUpon>Updater.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UpdateSuccess.resx">
+      <DependentUpon>UpdateSuccess.cs</DependentUpon>
+    </EmbeddedResource>
+    <None Include="app.manifest" />
+    <None Include="packages.config" />
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="App.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="b14776c6_be71_4ed8_a640_1eba63a9e042_wtZ_icon.ico" />
+    <Content Include="favicon.ico" />
+    <Content Include="favicon_1.ico" />
+    <Content Include="trainerlogomk2_c_CLE_icon.ico" />
+    <Content Include="workingcopy02_tx2_6gT_icon.ico" />
+    <Content Include="workingcopy02_tx_Fph_icon.ico" />
+    <None Include="Resources\video-game-console-with-gamepad.png" />
+    <Content Include="update.xml">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+      <SubType>Designer</SubType>
+    </Content>
+  </ItemGroup>
+  <ItemGroup>
+    <BootstrapperPackage Include=".NETFramework,Version=v4.6.1">
+      <Visible>False</Visible>
+      <ProductName>Microsoft .NET Framework 4.6.1 %28x86 and x64%29</ProductName>
+      <Install>true</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Net.Framework.3.5.SP1">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 3.5 SP1</ProductName>
+      <Install>false</Install>
+    </BootstrapperPackage>
+  </ItemGroup>
+  <ItemGroup>
+    <WCFMetadata Include="Connected Services\" />
+  </ItemGroup>
+  <ItemGroup />
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+</Project>
